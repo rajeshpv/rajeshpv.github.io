@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Replace and clipboard utility</title>
+
+</head>
+
+<body>
+  <br /> <br />
+  
+  <textarea rows="20" cols="80" id="input-lines">
+      $1,051.38 		$698.12 
+      $1,040.21 		$763.74 
+      $1,027.99 		$835.54 
+      $1,014.63 		$914.08 
+      $1,000.00 		$1,000.00 
+</textarea>
+
+  <br /><br />
+  Replace ::
+  from char=<input type="text" value="$" id="from-char" style="width: 30px;" />
+  to char=<input type="text" value="" id="to-char" style="width: 30px;" />
+  <button onclick="runReplace()">Run replace </button>
+
+  <br /><br />
+  <button onclick="generateClips()">Split Words to Copy !! </button>
+  columns = <input type="text" value="2" id="col-count" style="width: 15px;" />
+
+  <p id="demo"></p>
+
+  <script src="replace.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
